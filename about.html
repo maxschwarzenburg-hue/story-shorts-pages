@@ -1,0 +1,64 @@
+<title>Story Shorts Bot</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root{
+  --bg:#faf9f7; --surface:#ffffff; --fg:#1c1b1a; --fg-muted:#5b5853;
+  --border:#e4e1da; --accent:#b4502a;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16140f; --surface:#1f1c16; --fg:#f1ede4; --fg-muted:#b3ad9f;
+    --border:#332f26; --accent:#e08350;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16140f; --surface:#1f1c16; --fg:#f1ede4; --fg-muted:#b3ad9f;
+  --border:#332f26; --accent:#e08350;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--fg);
+  font-family:'Source Serif 4', Georgia, serif;
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+}
+.wrap{max-width:680px; margin:0 auto; padding-block:64px 80px}
+.eyebrow{
+  font-family:'Space Grotesk', Inter, sans-serif; font-size:13px; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-family:'Space Grotesk', Inter, sans-serif;
+  font-size:clamp(32px,6vw,44px); line-height:1.1; margin:0 0 18px;
+  text-wrap:balance;
+}
+p{font-size:18px; line-height:1.65; color:var(--fg); max-width:60ch; margin:0 0 16px}
+.links{display:flex; gap:12px; flex-wrap:wrap; margin-top:36px}
+.links a{
+  font-family:Inter, sans-serif; font-size:15px; font-weight:500;
+  color:var(--fg); text-decoration:none;
+  border:1px solid var(--border); border-radius:8px; padding:10px 16px;
+  background:var(--surface);
+}
+.links a:hover{border-color:var(--accent); color:var(--accent)}
+.meta{
+  margin-top:56px; padding-top:20px; border-top:1px solid var(--border);
+  font-family:Inter, sans-serif; font-size:14px; color:var(--fg-muted);
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&display=swap">
+
+<div class="wrap">
+  <p class="eyebrow">Personal project</p>
+  <h1>Story Shorts Bot</h1>
+  <p>A small personal automation tool that writes short comedic stories, narrates and renders them as short-form video, and publishes the finished video to its developer's own TikTok account.</p>
+  <p>It is a single-developer, single-account tool — not a public app or service, and not distributed to other people.</p>
+  <div class="links">
+    <a href="https://claude.ai/artifact/4RHwxthSptftt1zJSpPupt">Privacy Policy</a>
+    <a href="https://claude.ai/artifact/MR2rmRnjgbd26Grkro4dHX">Terms of Service</a>
+  </div>
+  <div class="meta">Story Shorts Bot &middot; personal, non-commercial project</div>
+</div>
